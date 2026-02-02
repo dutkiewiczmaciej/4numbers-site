@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="4Numbers - A logic game. Crack your opponent's secret 4-digit code to win!">
+    <meta name="theme-color" content="#EB8694">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="4Numbers - Logic Game">
+    <meta property="og:description" content="A logic game. Crack your opponent's secret code to win!">
+    <meta property="og:type" content="website">
+
+    <title>4Numbers - Logic Game</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo">
+            <span class="logo-number">4</span>
+            <span class="logo-text">Numbers</span>
+            <div class="logo-dots">
+                <span class="dot filled"></span>
+                <span class="dot filled"></span>
+                <span class="dot outline"></span>
+                <span class="dot outline"></span>
+            </div>
+        </div>
+
+        <!-- Tagline -->
+        <p class="tagline">
+            A logic game.<br>
+            Crack your opponent's code to win!
+        </p>
+
+        <!-- Features -->
+        <div class="features">
+            <div class="feature">
+                <span>🤖</span>
+                <span>vs AI</span>
+            </div>
+            <div class="feature">
+                <span>👥</span>
+                <span>with friend</span>
+            </div>
+            <div class="feature">
+                <span>🌐</span>
+                <span>online</span>
+            </div>
+        </div>
+
+        <!-- Game Center badge -->
+        <div class="gamecenter-badge">
+            <span class="gc-icon">🎮</span>
+            <div class="gamecenter-info">
+                <div class="gc-title">Game Center</div>
+                <div class="gc-subtitle">Leaderboards & Online Multiplayer</div>
+            </div>
+        </div>
+
+        <!-- Section 1: Secret Code (like onboarding page 2) -->
+        <div class="section-card">
+            <div class="title-wrapper">
+                <h2><span class="icon">🔒</span> Secret Code</h2>
+            </div>
+            <p style="text-align: center;">Each player sets a secret 4-digit code using digits 0-9.</p>
+
+            <div class="code-display">
+                <div class="digit-box">1</div>
+                <div class="digit-box">2</div>
+                <div class="digit-box">3</div>
+                <div class="digit-box">4</div>
+            </div>
+
+            <p style="text-align: center;">
+                <span class="highlight-pill">No repeating digits allowed!</span>
+            </p>
+        </div>
+
+        <!-- Section 2: Feedback (like onboarding page 3) -->
+        <div class="section-card">
+            <div class="title-wrapper">
+                <h2><span class="icon">❓</span> Feedback</h2>
+            </div>
+            <p>After each guess, you get hints:</p>
+
+            <div class="feedback-explanation">
+                <div class="feedback-row">
+                    <div class="feedback-dot correct"></div>
+                    <span class="feedback-text">Correct digit in correct position</span>
+                </div>
+                <div class="feedback-row">
+                    <div class="feedback-dot partial"></div>
+                    <span class="feedback-text">Correct digit in wrong position</span>
+                </div>
+            </div>
+
+            <!-- Examples like in onboarding -->
+            <div class="feedback-examples">
+                <!-- Example 1: All wrong places -->
+                <div class="example-row">
+                    <div>
+                        <div class="example-guess">
+                            <span class="secret">1234</span>
+                            <span class="arrow">→</span>
+                            <span>4321</span>
+                        </div>
+                        <div class="example-label">Close! Right digits, wrong places</div>
+                    </div>
+                    <div class="example-dots">
+                        <div class="dot partial"></div>
+                        <div class="dot partial"></div>
+                        <div class="dot partial"></div>
+                        <div class="dot partial"></div>
+                    </div>
+                </div>
+
+                <!-- Example 2: Mixed result -->
+                <div class="example-row">
+                    <div>
+                        <div class="example-guess">
+                            <span class="secret">1234</span>
+                            <span class="arrow">→</span>
+                            <span>1247</span>
+                        </div>
+                        <div class="example-label">2 in place, 1 close, 1 wrong</div>
+                    </div>
+                    <div class="example-dots">
+                        <div class="dot correct"></div>
+                        <div class="dot correct"></div>
+                        <div class="dot partial"></div>
+                    </div>
+                </div>
+
+                <!-- Example 3: Win -->
+                <div class="example-row">
+                    <div>
+                        <div class="example-guess">
+                            <span class="secret">1234</span>
+                            <span class="arrow">→</span>
+                            <span>1234</span>
+                        </div>
+                        <div class="example-label win">WIN! All in correct places</div>
+                    </div>
+                    <div class="example-dots">
+                        <div class="dot correct"></div>
+                        <div class="dot correct"></div>
+                        <div class="dot correct"></div>
+                        <div class="dot correct"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3: Ready to Play (like onboarding page 4) -->
+        <div class="section-card">
+            <div class="title-wrapper">
+                <h2><span class="icon">🏆</span> Ready to Play!</h2>
+            </div>
+            <p style="text-align: center;">First to crack the opponent's code wins!</p>
+            <p style="text-align: center;">You have 60 seconds per turn.</p>
+            <p style="text-align: center;">
+                <span class="highlight-pill">Train your memory, logic & deduction!</span>
+            </p>
+        </div>
+
+        <!-- Footer with buttons -->
+        <footer>
+            <a href="privacy/index.html" class="footer-btn">Privacy Policy</a>
+            <a href="support/index.html" class="footer-btn">Support</a>
+        </footer>
+    </div>
+</body>
+</html>
